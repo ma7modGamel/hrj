@@ -1,0 +1,6 @@
+[29-Dec-2018 08:40:22 UTC] PHP Deprecated:  Function create_function() is deprecated in /home/harajshamel/public_html/public/plugins/ckeditor/plugins/imageuploader/function.php on line 20
+[29-Dec-2018 08:40:22 UTC] PHP Notice:  A non well formed numeric value encountered in /home/harajshamel/public_html/public/plugins/ckeditor/plugins/imageuploader/function.php on line 40
+[29-Dec-2018 08:40:22 UTC] PHP Notice:  Undefined variable: alerts1 in /home/harajshamel/public_html/public/plugins/ckeditor/plugins/imageuploader/imgbrowser.php on line 151
+[29-Dec-2018 08:40:22 UTC] PHP Notice:  Undefined variable: alerts5 in /home/harajshamel/public_html/public/plugins/ckeditor/plugins/imageuploader/imgbrowser.php on line 151
+[29-Dec-2018 08:40:22 UTC] PHP Notice:  Undefined variable: alerts6 in /home/harajshamel/public_html/public/plugins/ckeditor/plugins/imageuploader/imgbrowser.php on line 151
+[29-Dec-2018 08:40:22 UTC] PHP Notice:  Undefined variable: alerts4 in /home/harajshamel/public_html/public/plugins/ckeditor/plugins/imageuploader/imgbrowser.php on line 151

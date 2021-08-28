@@ -1,0 +1,8 @@
+[08-Jul-2020 15:42:59 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/redaazq/public_html/haraj/ma3rood/vendor/laravel/framework/src/Illuminate/Support/Arr.php on line 384
+[08-Jul-2020 15:43:00 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/redaazq/public_html/haraj/ma3rood/vendor/laravel/framework/src/Illuminate/Support/Arr.php on line 384
+[08-Jul-2020 15:46:14 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/redaazq/public_html/haraj/ma3rood/vendor/laravel/framework/src/Illuminate/Support/Arr.php on line 384
+[08-Jul-2020 15:46:17 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/redaazq/public_html/haraj/ma3rood/vendor/laravel/framework/src/Illuminate/Support/Arr.php on line 384
+[08-Jul-2020 18:46:46 Asia/Riyadh] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 16384 bytes) in /home/redaazq/public_html/haraj/ma3rood/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 330
+[08-Jul-2020 18:46:53 Asia/Riyadh] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 16384 bytes) in /home/redaazq/public_html/haraj/ma3rood/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 326
+[08-Jul-2020 18:47:08 Asia/Riyadh] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 16384 bytes) in /home/redaazq/public_html/haraj/ma3rood/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 330
+[08-Jul-2020 18:47:35 Asia/Riyadh] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 16384 bytes) in /home/redaazq/public_html/haraj/ma3rood/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 330

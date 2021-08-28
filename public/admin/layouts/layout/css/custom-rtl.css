@@ -1,0 +1,37 @@
+@font-face{
+    font-family:'stc';
+    src:url('../fonts/stc.eot?#iefix');
+    src:local('STC'),local('stc'),url('../fonts/stc.woff') format('woff');
+}
+body{
+	font-family: "stc",sanserif !important;
+    width: 100%;
+    height: 100%;
+    font-weight: bold !important;
+}
+* {
+    font-weight: bold !important;
+}
+.classic-menu-dropdown{
+	background: #4cae4f!important;
+}
+.classic-menu-dropdown a i{
+	color: #fff!important;
+}
+.delPostImg{
+    border: 2px solid #ff6c6c;
+    padding: 0px 11px;
+    border-radius: 4px;
+    font-size: 24px;
+    position: absolute;
+    left: 10px;
+    color: #fff;
+    background: rgba(132, 0, 0, 0.67);
+}
+
+.logo-default{
+    height: 35px !important;
+    width: auto !important;
+    position: relative;
+    top: 2px;
+}
