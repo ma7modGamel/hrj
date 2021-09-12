@@ -291,21 +291,13 @@
                     <li class="active">
                         <a href="<?php echo e(url('/')); ?>">الرئيسية</a>
                     </li>
-                    <li>
-                        <a href="<?php echo e(url('tags/1')); ?>">حراج السيارات</a>
-                    </li>
-                    <li>
-                        <a href="<?php echo e(url('tags/2')); ?>">حراج العقار</a>
-                    </li>
-                    <li>
-                        <a href="<?php echo e(url('tags/544')); ?>">حراج الأجهزة</a>
-                    </li>
-                    <li>
-                        <a href="<?php echo e(url('tags/555')); ?>">مواشي وحيوانات وطيور</a>
-                    </li>
-                    <li>
-                        <a href="<?php echo e(url('tags/540')); ?>">أثاث</a>
-                    </li>
+           
+                        <?php $__currentLoopData = App\Cat::where('parent_id',null)->where('sort','!=',null)->orderBy('sort','asc')->get(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $cat): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <li>
+                            <a href="<?php echo e(url('tags/'.$cat->id)); ?>"><?php echo e($cat->name); ?></a>
+                        </li>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
                     <li>
                         <a href="<?php echo e(url('pages/advsearch')); ?>">  البحث</a>
                     </li>
@@ -475,12 +467,9 @@
                 </ul>
 
                <a href="<?php echo e(url('/')); ?>"><i class="fa fa-car"></i>الرئيسية  </a>
-               <a href="<?php echo e(url('tags/1')); ?>"><i class="fa fa-car"></i>حراج السيارات</a>
-               <a href="<?php echo e(url('tags/544')); ?>"><i class="fa fa-mobile"></i>أجهزة</a>
-               <a href="<?php echo e(url('tags/2')); ?>" class="aqarRedirectCity">عقارات</a>
-               <a href="<?php echo e(url('tags/555')); ?>">مواشي حيوانات وطيور</a>
-               <a href="<?php echo e(url('tags/540')); ?>">أثاث</a>
-               <!--<a href="<?php echo e(url('tags/557')); ?>"> خدمات </a>-->
+                   <?php $__currentLoopData = App\Cat::where('parent_id',null)->where('sort','!=',null)->orderBy('sort','asc')->get(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $cat): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                       <a href="<?php echo e(url('tags/'.$cat->id)); ?>"><?php echo e($cat->name); ?></a>
+                   <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                <a href="<?php echo e(url('pages/advsearch')); ?>"> <i class="fa fa-search"></i> البحث</a>
                <!--<a href="<?php echo e(url('page/sitemap')); ?>"><i class="fa fa-sitemap"></i> أقسام أكثر ...</a>-->
                <!---->
@@ -670,12 +659,12 @@
                      <a href="#" class="download-btn apple">
                      <img src="<?php echo e(Request::root()); ?>/public/upload/app-store-badge.png">
                      </a>
-                     <a href="#" class="download-btn google">
-                     <img src="<?php echo e(Request::root()); ?>/public/upload/google-play-badge.png">
-                     </a>
+             
+
+
                   </div>
                </div>
-               <div class="col-md-4">
+               <div class="col-md-3">
                   <ul class="footer-list">
                       <?php if(Auth::guest()): ?>
                      <li class="flist">
@@ -700,7 +689,7 @@
                      <li class="flist"><a href="#"> <i class="star fa fa-star "> </i> تطبيق حراج</a></li>
                   </ul>
                </div>
-               <div class="col-md-4">
+               <div class="col-md-3">
                   <ul class="footer-list">
                  
                  
@@ -718,7 +707,7 @@
              
                   </ul>
                </div>
-               <div class="col-md-4">
+               <div class="col-md-3">
                   <ul class="footer-list">
                    
                    <?php $__currentLoopData = \App\Page::where('active',1)->get(); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $page): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
@@ -750,6 +739,31 @@
                      
                   </ul>
                </div>
+                              <div class="col-md-3">
+                              <div class="row logos-hh">
+                <div class="col-md-6">
+                    <a href="#" class="download-btn apple">
+                        <img src="<?php echo e(Request::root().'/public/upload/logo/'.getSettings('techLogo')); ?>" width="150px">
+                    </a>
+
+
+                </div>
+                    <div class="col-md-6">
+                        <a href="#" class="download-btn apple">
+                            <img src="<?php echo e(Request::root().'/public/upload/logo/'.getSettings('footerLogo')); ?>" width="200px">
+                        </a>
+                    </div>
+
+                    </div>
+                <!-- /.row -->
+                 <div class="col-md-12">
+                     <h4 class="h4">رقم معروف :<?php echo e(getSettings('MaroofNumber')); ?></h4>
+<br>
+                     <a href="#" class="download-btn apple">
+                         <img src="<?php echo e(Request::root().'/public/upload/logo/'.getSettings('MaroofLogo')); ?>" width="200px">
+                     </a>
+                 </div>
+             </div>
             </div>
          </div>
       </footer>

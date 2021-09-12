@@ -37,6 +37,21 @@ class settingController extends Controller
       SiteSetting::upSetImg($request->file('logo'));
     #=================================================================
     }
+        if($request->file('techLogo') != null){
+          #=========== custom function in SiteSetting model ================
+          SiteSetting::upSetImg($request->file('techLogo'),'techLogo','techLogo');
+          #=================================================================
+      }
+      if($request->file('MaroofLogo') != null){
+          #=========== custom function in SiteSetting model ================
+          SiteSetting::upSetImg($request->file('MaroofLogo'),'MaroofLogo','MaroofLogo');
+          #=================================================================
+      }
+          if($request->file('footerLogo') != null){
+          #=========== custom function in SiteSetting model ================
+          SiteSetting::upSetImg($request->file('footerLogo'),'footerLogo','footerLogo');
+          #=================================================================
+      }
     if($request->file('noImage') != null){
     #=========== custom function in SiteSetting model ================
       SiteSetting::upSetImg($request->file('noImage'),'noImage','no_image');
@@ -59,6 +74,9 @@ class settingController extends Controller
                                               'favicon',
                                               'WM_img',
                                               'waterMarkTest',
+                                                     'techLogo',
+                                                'MaroofLogo',
+                                                  'footerLogo',
                                               ]) as $key=>$reg){
       $settigsupdate = $sitesetting->where('name',$key)->get()[0];
       $settigsupdate->fill(['value'=>$reg])->save();

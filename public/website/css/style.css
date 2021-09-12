@@ -36,7 +36,7 @@ nav {
 }
 
 nav img {
-    height: 40px;
+    height: 75px;
     margin-top: 5px;
     position: relative;
     top: 6px;
@@ -61,6 +61,7 @@ nav li {
 
 .fixed-nav li {
     margin-right: 48px;
+    margin-top: 10px;
 }
 
 nav li a {
@@ -156,6 +157,7 @@ nav {
 .md-padd_n .part_i {
     margin: 5px 0px;
     clear: both;
+    display: none;
 }
 
 .md-padd_n .part_i .cars img {
@@ -3744,9 +3746,8 @@ a {
 }
 
 nav .logo-top img {
-    top: -2px;
+    top: 0;
     margin: 0;
-
 }
 
 ul {
@@ -5728,5 +5729,30 @@ text-align: center;    }
 }
 
 #mmmmm{
-    display: none !important;
+    /* display: none !important; */
+}
+
+
+.body .md-padd_n .part_i select#markaCopy {
+    display: none;
+}
+
+.md-padd_n .part_i.p-form {
+    display: block;
+}
+
+.logos-hh .download-btn {
+    display: block;
+    max-width: 150px;
+    margin: 0 0 30px;
+}
+
+.logos-hh .download-btn img {
+    width: 100%;
+}
+
+.logos-hh .col-md-6:nth-child(2) .download-btn img {
+    background: #0a75bd;
+    border-radius: 50%;
+    padding: 10px;
 }
